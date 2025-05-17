@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+.itemContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currentImg {
+  width: 445px;
+  height: 445px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 32px;
+}
+
+.allImgs {
+  display: flex;
+  gap: 31px;
+}
+
+.allImgs img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ff7e1b;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.75) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+}
+
+.right h4 {
+  color: #ff7e1b;
+  font-family: "Kumbh Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.right h1 {
+  color: #1d2026;
+  font-family: "Kumbh Sans";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 109.091% */
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .itemContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
